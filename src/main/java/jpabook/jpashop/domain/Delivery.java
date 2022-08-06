@@ -13,7 +13,7 @@ public class Delivery {
     @Column(name = "delivery_id")
     private Long id;
 
-    @OneToOne(mappedBy = "delivery")  // @OneToOne관계에서는 FK 어느쪽에 두던 상관X
+    @OneToOne(fetch = FetchType.LAZY, mappedBy = "delivery")  // @OneToOne관계에서는 FK 어느쪽에 두던 상관X
     private Order order;
 
     @Embedded
