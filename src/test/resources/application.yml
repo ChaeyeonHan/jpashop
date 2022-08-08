@@ -1,0 +1,19 @@
+spring:
+  # 스프링에서 기본 설정을 적어주지 않으면 메모리모드로 실행시킨다
+#  datasource:
+#    driver-class-name: org.mariadb.jdbc.Driver
+#    # url부분을 메모리로 바꿔서 테스트 할 수 있음!!
+#    url: jdbc:mariadb://localhost:3307/jpashop?serverTimezone=Asia/Seoul
+#    username: root
+#    password: 1234
+#
+#  jpa:
+#    hibernate:
+#      ddl-auto: create #create update none
+#      naming:
+#        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+#    show-sql: true
+
+  logging:
+    level:
+      org.hibernate.SQL: debug
