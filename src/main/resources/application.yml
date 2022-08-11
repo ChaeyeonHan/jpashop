@@ -21,6 +21,10 @@ spring:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
     show-sql: true
 
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+
   logging:
     level:
       org.hibernate.SQL: debug
