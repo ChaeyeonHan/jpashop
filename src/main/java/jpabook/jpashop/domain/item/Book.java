@@ -12,4 +12,16 @@ import javax.persistence.Entity;
 public class Book extends Item{  // 상속관계
     private String author;
     private String isbn;
+
+    //== 생성 메서드 ==//
+    public static Book createBook(String name, int price, int stockQuantity, String author, String isbn){
+        Book book = new Book();
+        book.setName(name);
+        book.setPrice(price);
+        book.setStockQuantity(stockQuantity);
+        book.setAuthor(author);
+        book.setIsbn(isbn);
+
+        return book;
+    }
 }
